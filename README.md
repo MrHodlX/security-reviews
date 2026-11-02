@@ -37,7 +37,7 @@ project's security policy, and never test live systems.
 
 ## Private reports (counted, not named)
 
-- Thirteen other open-source Bitcoin projects received private reports in
+- Fourteen other open-source Bitcoin projects received private reports in
   October and November 2026, from critical signing and seed-loss paths to
   low-severity hardening.
 - One project confirmed a medium finding and fixed it within two days; one
