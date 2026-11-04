@@ -40,6 +40,14 @@ systems.
   v13.2.4 release post on 29 October 2026 ("code and security scans",
   @MrHodl).
 
+**BIPs** (bitcoin/bips), November 2026
+- [bitcoin/bips#2345](https://github.com/bitcoin/bips/pull/2345): one of
+  BIP-373's test vectors repeated another case, so the x-only output
+  participant keys case was never really tested. The fix replaced it with the
+  vector Bitcoin Core already uses. Merged by jonatack; Ava Chow (achow101),
+  the author of BIP-373, gave a post-merge ACK: "This matches the vector for
+  this case in Bitcoin Core."
+
 **electrs**: four ordinary bugs filed as public issues (not security issues under its policy).
 
 ## Private reports (counted, not named)
