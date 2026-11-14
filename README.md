@@ -83,6 +83,10 @@ As of November 2026:
   four points, three were fixed within about an hour, among them a schema
   version bump so that an older build refuses the new format instead of
   misreading it. The fourth was declined with reasons.
+- A code contribution, [pull request #1629](https://github.com/rbitcoin-org/rbitcoin/pull/1629),
+  merged by the maintainer on 14 November 2026: the RPC server's "at max
+  connections" log line is now written at most once a second, so a flood of
+  connections past the cap no longer adds one line each.
 
 **electrs**: four ordinary bugs filed as public issues (not security issues under its policy).
 
