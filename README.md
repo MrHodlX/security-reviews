@@ -57,7 +57,7 @@ As of November 2026:
 **Foxy** (getfoxy), November 2026
 - Reviewed at the Foxy team's request. Both advisories were published on 3 November 2026 with patched versions:
   - [GHSA-38xx-q9p3-2f57](https://github.com/getfoxy/iOS/security/advisories/GHSA-38xx-q9p3-2f57) (critical, iOS wallet): a failed install-marker write could make the next launch treat it as a reinstall and delete the seed. Fixed in Build 23.
-  - [GHSA-vppf-jq63-hwx9](https://github.com/getfoxy/card/security/advisories/GHSA-vppf-jq63-hwx9) (medium, ecash card applet): the Schnorr signing nonce stayed in persistent key storage after signing. Fixed in card 1.25.
+  - GHSA-vppf-jq63-hwx9 (medium, ecash card applet): the Schnorr signing nonce stayed in persistent key storage after signing. Fixed in card 1.25. The advisory page went offline when the card repository was removed from GitHub in November 2026.
 
 **ZEUS** (Lightning wallet), October 2026
 - A private code and security review. ZEUS credited it publicly in its
@@ -125,7 +125,9 @@ As of November 2026:
 - A private report on 13 November 2026 to Second's security team: two
   findings rated high and four rated medium, plus lower-severity notes. They
   confirmed it, fixed both highs and two of the mediums within a week, and
-  credited the report in their release notes. I re-checked the fixes on 19
+  credit the report by name in their
+  [changelog](https://github.com/ark-bitcoin/bark/commit/0730abbb77317007fc0744e268d5688e9e8c7805).
+  I re-checked the fixes on 19
   November: new round VTXOs must now be locked by the wallet's own unlock
   hash, the new VTXOs are stored before forfeits are sent, an unanswered
   Lightning payment attempt waits for xpay's own retry window, and repeated
